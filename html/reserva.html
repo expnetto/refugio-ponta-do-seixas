@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eraldo e Davi">
+    <meta name="keywords" content="pousada, hospedagem, João Pessoa, Ponta do Seixas, reserva, formulário, hospedagem">
+    <meta name="description" content="Solicite sua reserva no Refúgio Ponta do Seixas: escolha datas, acomodação e extras.">
+    <title>Reserva | Refúgio Ponta do Seixas</title>
+</head>
+
+<body>
+    <header id="topo">
+        <p>
+            <a href="index.html"><img src="../img/logo.png" alt="Logotipo da pousada: sol nascendo sobre o mar" width="80" height="80"></a>
+        </p>
+        <p>
+            <strong>Refúgio Ponta do Seixas</strong><br>
+            <em>Pousada no extremo oriental das Américas, em João Pessoa (<abbr title="Paraíba">PB</abbr>)</em>
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Início</a></li>
+                <li><a href="sobre.html">🌅 Sobre</a></li>
+                <li>
+                    <a href="quartos.html">🛏️ Quartos</a>
+                    <ul>
+                        <li><a href="suite-standard.html">Suíte Standard</a></li>
+                        <li><a href="suite-vista-mar.html">Suíte Vista Mar</a></li>
+                        <li><a href="bangalo.html">Bangalô</a></li>
+                    </ul>
+                </li>
+                <li><a href="lazer.html">🏊 Lazer</a></li>
+                <li><a href="cafe-da-manha.html">☕ Café da manhã</a></li>
+                <li><a href="passeios.html">⛵ Passeios</a></li>
+                <li><a href="localizacao.html">📍 Localização</a></li>
+                <li><a href="reserva.html" aria-current="page"><strong>📝 Reservar</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h1>Solicitar reserva</h1>
+
+        <section>
+            <p>
+                Preencha o formulário e enviaremos a confirmação por e-mail em até 24 horas.
+                Campos marcados com <strong>*</strong> são obrigatórios.
+            </p>
+            <article>
+                <h2>Vantagens de reservar direto com a gente</h2>
+                <ul>
+                    <li>Melhor tarifa garantida</li>
+                    <li>Early check-in gratuito, se houver disponibilidade</li>
+                    <li>Welcome drink na chegada</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <form action="obrigado.html" method="get">
+
+                <fieldset>
+                    <legend>Dados do hóspede</legend>
+
+                    <p>
+                        <label for="nome">Nome completo *</label><br>
+                        <input type="text" id="nome" name="nome" size="40" placeholder="Digite seu nome completo" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail *</label><br>
+                        <input type="email" id="email" name="email" size="40" placeholder="exemplo@email.com" required>
+                    </p>
+
+                    <p>
+                        <label for="telefone">Telefone (WhatsApp) *</label><br>
+                        <input type="tel" id="telefone" name="telefone" size="40" placeholder="(83) 99999-9999" required>
+                    </p>
+
+                    <p>
+                        <label for="origem">Cidade de origem *</label><br>
+                        <input list="cidades" id="origem" name="origem" size="40" placeholder="Digite ou escolha sua cidade" required>
+                        <datalist id="cidades">
+                            <option value="João Pessoa (PB)">
+                            <option value="Campina Grande (PB)">
+                            <option value="Recife (PE)">
+                            <option value="Natal (RN)">
+                            <option value="Fortaleza (CE)">
+                            <option value="Salvador (BA)">
+                            <option value="São Paulo (SP)">
+                            <option value="Rio de Janeiro (RJ)">
+                            <option value="Brasília (DF)">
+                        </datalist>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua estadia</legend>
+
+                    <p>
+                        <label for="checkin">Check-in *</label><br>
+                        <input type="date" id="checkin" name="checkin" min="2026-09-16" required>
+                    </p>
+
+                    <p>
+                        <label for="checkout">Check-out *</label><br>
+                        <input type="date" id="checkout" name="checkout" min="2026-09-17" required>
+                    </p>
+
+                    <p>
+                        <label for="quarto">Acomodação *</label><br>
+                        <select id="quarto" name="quarto" required>
+                            <option value="">Escolha uma acomodação</option>
+                            <option value="suite-standard">Suíte Standard (até 2 pessoas)</option>
+                            <option value="suite-vista-mar">Suíte Vista Mar (até 3 pessoas)</option>
+                            <option value="bangalo">Bangalô (até 4 pessoas)</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="adultos">Adultos</label><br>
+                        <select id="adultos" name="adultos">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="criancas">Crianças</label><br>
+                        <select id="criancas" name="criancas">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="orcamento">Orçamento aproximado por noite</label><br>
+                        R$ 300
+                        <input type="range" id="orcamento" name="orcamento" min="300" max="2000" step="50">
+                        R$ 2.000
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Regime de alimentação *</legend>
+                    <p>
+                        <input type="radio" id="regime-cafe" name="regime" value="cafe" required>
+                        <label for="regime-cafe">Somente café da manhã (incluso)</label><br>
+
+                        <input type="radio" id="regime-meia" name="regime" value="meia-pensao">
+                        <label for="regime-meia">Meia pensão: café e jantar (+ R$ 95 por pessoa/noite)</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <p>
+                        <input type="checkbox" id="transfer" name="extras" value="transfer">
+                        <label for="transfer">Transfer do aeroporto (R$ 90)</label><br>
+
+                        <input type="checkbox" id="pet" name="extras" value="pet">
+                        <label for="pet">Vou levar meu pet (R$ 50)</label><br>
+
+                        <input type="checkbox" id="passeios" name="extras" value="passeios">
+                        <label for="passeios">Tenho interesse nos <a href="passeios.html">passeios</a></label><br>
+
+                        <input type="checkbox" id="decoracao" name="extras" value="decoracao">
+                        <label for="decoracao">Decoração especial (aniversário ou lua de mel)</label>
+                    </p>
+
+                    <p>
+                        <label for="cor">Cor da decoração (balões e flores)</label><br>
+                        <input type="color" id="cor" name="cor" value="#e67e22">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Documento e observações</legend>
+
+                    <p>
+                        <label for="documento">Documento de identificação (opcional, agiliza o check-in)</label><br>
+                        <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.jpeg,.png">
+                    </p>
+
+                    <p>
+                        <label for="conheceu">Como conheceu a pousada?</label><br>
+                        <select id="conheceu" name="conheceu">
+                            <optgroup label="Internet">
+                                <option value="instagram">Instagram</option>
+                                <option value="google">Google</option>
+                                <option value="sites-de-reserva">Sites de reserva</option>
+                            </optgroup>
+                            <optgroup label="Indicação">
+                                <option value="amigos">Amigos</option>
+                                <option value="familia">Família</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="observacoes">Observações</label><br>
+                        <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Horário previsto de chegada, alergias, pedidos especiais..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Solicitar reserva</button>
+                    <input type="reset" value="Limpar formulário">
+                </p>
+            </form>
+        </section>
+
+        <aside>
+            <h2>Antes de enviar</h2>
+            <ul>
+                <li>Check-in a partir das 14h e check-out até as 12h.</li>
+                <li>Cancelamento gratuito até 7 dias antes.</li>
+                <li>No Réveillon, mínimo de 4 noites.</li>
+            </ul>
+            <p><a href="quartos.html">Consultar tarifas</a></p>
+        </aside>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p><strong>Refúgio Ponta do Seixas</strong>: onde o sol nasce primeiro.</p>
+        <address>
+            Rua do Farol, 100, Ponta do Seixas, João Pessoa, <abbr title="Paraíba">PB</abbr><br>
+            E-mail: <a href="mailto:reservas@refugiopontadoseixas.com.br">reservas@refugiopontadoseixas.com.br</a><br>
+            Telefone: (83) 3000-0000
+        </address>
+        <p>
+            <small>
+                <abbr title="Cadastro Nacional da Pessoa Jurídica">CNPJ</abbr> 00.000.000/0001-00 (fictício).
+                &copy; 2026 Eraldo e Davi. Pousada fictícia criada para a disciplina Desenvolvimento Front-End para Web (UNIPÊ).
+            </small>
+        </p>
+        <p><a href="#topo">⬆ Voltar ao topo</a></p>
+    </footer>
+</body>
+
+</html>

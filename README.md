@@ -1,12 +1,11 @@
 # Refúgio Ponta do Seixas
 
 Trabalho final da Unidade I da disciplina Desenvolvimento Front-End para Web (UNIPÊ, prof. Israel Cunha).
-É o site de uma pousada fictícia em João Pessoa, na Ponta do Seixas, que segundo a lenda é o primeiro
-lugar das Américas a ver o sol nascer. O visitante navega pelas acomodações, pelo lazer, café da manhã
+É o site de uma pousada fictícia em João Pessoa, na Ponta do Seixas. O visitante navega pelas acomodações, pelo lazer, café da manhã
 e passeios, e no final pode preencher um formulário pedindo reserva.
 
 Regra principal do trabalho: só HTML, nada de CSS e nada de JavaScript. Então o site é bem simples
-visualmente mesmo, sem cores nem fontes personalizadas - o foco aqui foi usar direito as tags e os
+visualmente mesmo, sem cores nem fontes personalizadas. O foco aqui foi usar direito as tags e os
 atributos que vimos até agora.
 
 ## Pré-requisitos
@@ -15,7 +14,6 @@ Pra rodar o projeto só precisa de:
 
 - Um navegador (Chrome, Firefox, o que tiver instalado)
 - Um editor de código pra ver os arquivos, usamos o VS Code
-- Se quiser, a extensão Live Server do VS Code, pra não precisar ficar abrindo o arquivo manualmente toda vez
 
 ## Passo a passo
 
@@ -92,5 +90,5 @@ As fotos, o áudio e o vídeo usados são provisórios, só pra preencher o layo
 
 ## Autores
 
-Eraldo e Davi - turma de Desenvolvimento Front-End para Web, UNIPÊ.
-GitHub: [github.com/expnetto](https://github.com/expnetto)
+Eraldo Xavier - RGM 34454705
+Davi Fernandes - RGM 41058372
